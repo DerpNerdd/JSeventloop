@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-// Problem 1: Synchronous vs. Asynchronous Console Log
+// Problem 1: Synchronous vs Asynchronous Console Log
 console.log("This is synchronous");
 
 setTimeout(() => {
@@ -9,7 +9,7 @@ setTimeout(() => {
 
 console.log("End of script");
 
-// Problem 2: Repeated Message with Interval
+// Problem 2: Repeated Message
 console.log("Interval started");
 
 const intervalId = setInterval(() => {
@@ -20,7 +20,7 @@ setTimeout(() => {
     clearInterval(intervalId);
 }, 10000);
 
-// Problem 3: Asynchronous File Reading vs. Synchronous File Reading
+// Problem 3: Asynchronous vs Synchronous File Reading
 fs.readFile('input.txt', 'utf8', (err, data) => {
     if (err) throw err;
     console.log("Asynchronous read:", data);
