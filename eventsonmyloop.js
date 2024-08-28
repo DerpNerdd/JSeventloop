@@ -24,7 +24,7 @@ setTimeout(() => {
 fs.readFile('input.txt', 'utf8', (err, data) => {
     if (err) throw err;
     console.log("Asynchronous read:", data);
-});
+});-----
 
 const dataSync = fs.readFileSync('input.txt', 'utf8');
 console.log("Synchronous read:", dataSync);
